@@ -1,0 +1,85 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    header {
+      background: #0f766e;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f766e;
+      margin-bottom: 15px;
+    }
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.18);
+}
+    a {
+      color: #0f766e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #e2e8f0;
+      font-size: 14px;
+    }
+header {
+  background: #0f766e;
+  color: white;
+  padding: 50px 20px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column; /* Mobilde her şey alt alta */
+  align-items: center;    /* Mobilde ortalı */
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.header-text {
+  text-align: center; /* Mobilde yazılar ortalı */
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.2);
+}
+
+/* Masaüstü (Bilgisayar) ekran ayarları */
+@media (min-width: 768px) {
+  .header-wrapper {
+    flex-direction: row;    /* Yazı ve resmi yan yana getir */
+    text-align: left;       /* Yazıları sola yasla */
+    justify-content: space-between; /* Aralarına boşluk koy */
+  }
+
+  .header-text {
+    text-align: left;       /* Masaüstünde yazı sola baksın */
+  }
+}
